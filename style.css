@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.7)),
+    url('img/forest-9097317_1280.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 99vh;
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 7px;
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  max-width: 600px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.nav-bar {
+  backdrop-filter: blur(200px);
+  padding: 10px;
+  border-radius: 30px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  backdrop-filter: blur(20px);
+}
+
+li {
+  margin: 0 10px 0 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h3 {
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.get {
+  width: 100px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(30, 30, 45, 1) 35%,
+    rgba(73, 73, 73, 1) 100%
+  );
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.get:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(73, 73, 73, 1) 0%,
+    rgba(30, 30, 45, 1) 35%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  transition: all 2.5s ease-in-out;
+}
+
+.main-input {
+  width: 80%;
+  padding: 18px;
+  background: rgba(20, 15, 15, 0.316);
+  backdrop-filter: blur(10px);
+  border: 1px solid grey;
+  border-radius: 30px;
+  /* -webkit-backdrop-filter: blur(10px); */
+  margin-bottom: 30px;
+  color: white;
+}
+
+.contain {
+  position: relative;
+}
+
+.gen {
+  position: absolute;
+  transform: translateX(-110%);
+  top: 8px;
+  backdrop-filter: blur(80px);
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  width: 110px;
+  cursor: pointer;
+}
+
+.gen:hover {
+  background-color: rgba(255, 255, 255, 0.26);
+  transition: all 0.5s ease;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 100px;
+  /* width: 20px; */
+  /* border: 1px whitesmoke solid; */
+}
+
+.p {
+  color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  backdrop-filter: blur(200px);
+  margin-right: 20px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  ul {
+    display: none;
+  }
+
+  footer {
+    padding-top: 60px;
+  }
+}
